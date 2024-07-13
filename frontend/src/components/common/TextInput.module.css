@@ -1,0 +1,82 @@
+.inputContainer {
+  border-bottom: 0.125rem solid black;
+  width: 26.8125rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  transition: border-bottom 0.3s;
+}
+
+.tInput {
+  width: 23.8125rem;
+  border: 0;
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  margin-left: 5px;
+}
+
+.visibilityIcon {
+  display: inline;
+  right: 5px;
+  cursor: pointer;
+}
+
+.tLabel {
+  color: #000;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.inputContainer.error {
+  border-bottom: 0.125rem solid red;
+}
+
+.inputContainer.focused {
+  border-bottom: 0.125rem solid #1a598c;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+@media only screen and (min-width: 2080px) {
+  .inputContainer {
+    width: 40rem;
+    height: 5rem;
+  }
+  .tInput {
+    font-size: 1.5rem;
+  }
+  .tLabel {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .inputContainer {
+    width: 30rem;
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .inputContainer {
+    width: 20rem;
+    height: 4rem;
+  }
+  .tInput {
+    width: 15rem;
+  }
+}

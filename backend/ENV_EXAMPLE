@@ -1,0 +1,7 @@
+DB_SERVER=serverName      //The server address of your SQL Server
+DB_NAME=databaseName      //The name of your database
+DB_USER=userName          // The username to connect to your SQL Server
+DB_PASSWORD=userPassword  // The password for the SQL Server user
+PORT=portNumber           // The port your server is running on
+JWT_SECRET=jwtKey         // The secret key used for JWT signing
+

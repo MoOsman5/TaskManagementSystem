@@ -1,0 +1,136 @@
+/* Container styling */
+.container {
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #555;
+}
+
+/* Input, textarea, and select element styling */
+.input,
+.textarea,
+.select {
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Select element styling, with custom dropdown arrow */
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDExIDYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMUw1LjUgNkwxMSAxSCIgZmlsbD0iI0FBQkNDQSIvPjwvc3ZnPg==') no-repeat right 10px center;
+  background-size: 10px 5px;
+  width: 96.6%;
+}
+
+/* Button group styling */
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* Button styling */
+.button {
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+/* Submit button styling */
+.button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Cancel button styling */
+.button[type="button"] {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Media Queries for responsiveness */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+  .button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .select {
+    width: 99.7%;
+  }
+}

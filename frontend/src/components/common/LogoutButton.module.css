@@ -1,0 +1,28 @@
+.container{
+  display: flex;
+  justify-content: end;
+}
+.logoutButton{
+  border-radius: 0.5rem;
+  color: #FE0000;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.00438rem;
+  display: flex;
+  align-items: center;
+  display: flex;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  cursor: pointer;
+  margin-left: 1.3rem;
+  border: 1px solid #FE0000;
+}
+
+.logoutButton:hover{
+  background-color: #FE0000;
+  color: white;
+}

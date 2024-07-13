@@ -1,0 +1,128 @@
+/* General container styling */
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+
+/* Styling for the left container */
+.leftContainer {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the right container */
+.rightContainer {
+  width: 50%;
+  background-color: #1A598C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Width for the inner div of right container */
+.rightContainer div {
+  width: 500px;
+}
+
+/* Styling for the image inside the inner div */
+.rightContainer div img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for the login prompt text */
+.go_to_login {
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+/* Styling for the span inside the login prompt */
+.go_to_login span {
+  color: #1A598C;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+/* Media query for screens larger than 2080px */
+@media only screen and (min-width: 2080px) {
+  .leftContainer {
+    height: 1080px;
+  }
+
+  .go_to_login {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media query for screens up to 1024px */
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 1020px;
+  }
+
+  .leftContainer {
+    height: 800px;
+  }
+}
+
+/* Media query for screens up to 700px */
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 688px;
+  }
+
+  .rightContainer {
+    display: none;
+  }
+
+  .leftContainer {
+    height: 1031px;
+    width: 100%;
+  }
+}
+
+/* Media query for screens up to 600px */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 590px;
+  }
+
+  .rightContainer {
+    display: none;
+  }
+
+  .leftContainer {
+    width: 100%;
+    height: 812px;
+  }
+}
+
+/* Media query for screens up to 480px */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 370px;
+  }
+
+  .rightContainer {
+    display: none;
+  }
+
+  .leftContainer {
+    width: 100%;
+    height: 812px;
+  }
+}

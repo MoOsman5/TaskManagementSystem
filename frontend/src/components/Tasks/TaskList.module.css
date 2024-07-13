@@ -1,0 +1,155 @@
+.container {
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.taskList{
+  padding: 0;
+}
+
+.createBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.createBtn {
+  display: flex;
+  padding: 0.625rem 0.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 0.5rem;
+  background: #007bff;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  width: 100px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.createBtn:hover {
+  opacity: 0.9;
+}
+
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.title {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  flex-grow: 1;
+}
+
+.btnsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.ViewBtn, .EditBtn, .deleteBtn {
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.00438rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid;
+}
+
+.ViewBtn {
+  color: #21c63a;
+  border-color: #21c63a;
+}
+
+.ViewBtn:hover {
+  background: #21c63a;
+  color: #fff;
+}
+
+.EditBtn {
+  color: #2b5af3;
+  border-color: #2b5af3;
+}
+
+.EditBtn:hover {
+  background: #2b5af3;
+  color: #fff;
+}
+
+.deleteBtn {
+  color: #FE0000;
+  border-color: #FE0000;
+}
+
+.deleteBtn:hover {
+  background: #FE0000;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .taskItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btnsContainer {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .taskItem {
+    padding: 10px;
+  }
+
+  .createBtn {
+    width: auto;
+  }
+
+  .ViewBtn, .EditBtn, .deleteBtn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
